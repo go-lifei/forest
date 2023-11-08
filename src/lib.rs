@@ -30,41 +30,41 @@ cfg_if::cfg_if! {
     }
 }
 
-mod auth;
-mod beacon;
-mod blocks;
-mod chain;
-mod chain_sync;
-mod cid_collections;
-mod cli;
-mod cli_shared;
-mod daemon;
-mod db;
-mod documentation;
-mod fil_cns;
-mod genesis;
-mod interpreter;
-mod ipld;
-mod key_management;
-mod libp2p;
-mod libp2p_bitswap;
-mod lotus_json;
-mod message;
-mod message_pool;
-mod metrics;
-mod networks;
-mod rpc;
-mod rpc_api;
-mod rpc_client;
-mod shim;
-mod state_manager;
-mod state_migration;
-mod statediff;
+pub mod auth;
+pub mod beacon;
+pub mod blocks;
+pub mod chain;
+pub mod chain_sync;
+pub mod cid_collections;
+pub mod cli;
+pub mod cli_shared;
+pub mod daemon;
+pub mod db;
+pub mod documentation;
+pub mod fil_cns;
+pub mod genesis;
+pub mod interpreter;
+pub mod ipld;
+pub mod key_management;
+pub mod libp2p;
+pub mod libp2p_bitswap;
+pub mod lotus_json;
+pub mod message;
+pub mod message_pool;
+pub mod metrics;
+pub mod networks;
+pub mod rpc;
+pub mod rpc_api;
+pub mod rpc_client;
+pub mod shim;
+pub mod state_manager;
+pub mod state_migration;
+pub mod statediff;
 #[cfg(test)]
 mod test_utils;
-mod tool;
-mod utils;
-mod wallet;
+pub mod tool;
+pub mod utils;
+pub mod wallet;
 
 /// These items are semver-exempt, and exist for forest author use only
 // We want to have doctests, but don't want our internals to be public because:
